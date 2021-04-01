@@ -1,27 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import TodoItem from './components/TodoItem'
 
 function App() {
   return (
-    <div>
-      <p>
-        <input type="checkbox" />
-        <span>Do you like React?</span>
-      </p>
-      <p>
-        <input type="checkbox" />
-        <span>Do you like Frontend?</span>
-      </p>
-      <p>
-        <input type="checkbox" />
-        <span>Do you like Backend?</span>
-      </p>
-      <p>
-        <input type="checkbox" />
-        <span>Do you like programming?</span>
-      </p>
-    </div>
-  );
+    <div className="todo-list">
+      <TodoItem />
+      <TodoItem />
+      <TodoItem />
+      <TodoItem />
+    </div>);
 }
 
 export default App;
