@@ -1,14 +1,17 @@
 import './App.css';
 import TodoItem from './components/TodoItem'
+import todoData from './todoData'
+
 
 function App() {
+
+  const todoItems = todoData.map(item => <TodoItem key={item.id} item={item} />)
+
   return (
     <div className="todo-list">
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
-    </div>);
+      {todoItems}
+    </div>
+  );
 }
 
 export default App;
